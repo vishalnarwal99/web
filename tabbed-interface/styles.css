@@ -1,0 +1,50 @@
+body {
+    font-family: monospace;
+    font-size: 2em;
+    color: #d4d4d4;
+    background-color: #323232;
+    padding: 24px;
+}
+
+main {
+    width: fit-content;
+    background-color: #252525;
+    padding: 0 32px;
+    display: grid;
+}
+
+.tab,
+.tab input {
+    display: contents;
+}
+
+.tab label {
+    color: #969696;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #2d2d2d;
+    padding: 8px 16px;
+    border-inline: 1px solid #969696;
+    grid-row: 1;
+}
+
+.tab input:checked~label {
+    color: #1f88d9;
+    background-color: #1e1e1e;
+}
+
+.tab section {
+    height: fit-content;
+    background-color: #1e1e1e;
+    padding: 16px 32px;
+    margin: 0 -32px;
+    grid-area: 2 / 1 / 2 / 4;
+}
+
+.tab section h1 {
+    margin-left: 1em;
+}
+
+.tab input:checked~section {
+    z-index: 1;
+}
