@@ -1,0 +1,47 @@
+body {
+    width: 100%;
+    margin: 0;
+}
+
+.image-container {
+    width: 1144px;
+    margin: auto;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.image-container .image-card {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.image-container img {
+    width: 100%;
+}
+
+.image-container p {
+    margin-block-end: 0.5em;
+}
+
+@media screen and (max-width: calc(1144px + 32px)) {
+    .image-container {
+        width: 854px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: calc(854px + 32px)) {
+    .image-container {
+        width: 564px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: calc(564px + 32px)) {
+    .image-container {
+        width: 274px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
